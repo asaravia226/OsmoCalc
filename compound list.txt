@@ -1,0 +1,2 @@
+calcium chloride,110.98,3
+magnesium chloride,95.211,3
