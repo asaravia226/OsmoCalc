@@ -1,0 +1,92 @@
+Functions: 
+	Command Line Argument handling: 
+	
+	struct ingredient
+		std::string name
+		double MW
+		int dissoc_ion
+	std::vector<ingredient> list; 
+	
+	File Management: 
+		File validation
+		Read file --> populate list --> print list
+		add to list --> write to file (update) 
+	Menu: 
+		Enter [o] for options 
+		Input validation
+		Reset (Loop to beginning) Calculator()
+		Add Reagent to list() 
+		
+	
+Psuedocode: 
+	
+	check for file()
+		if (std::ifstream myFile("ingredients.txt").fail_to_open)
+			cout << No such file. Check folder 
+			return // exit program 
+			
+		else file found --> open
+			//write file to container with range loop
+			std::string line
+			while (!myFile.eof())
+				stringstream ss(line)
+				getlin(ss,line,',')
+				list[ingredient].name = line; 
+				getline -> get MolWeight
+				string to double molWeigh
+				assign to ingredient
+				getline-> get dissoc_ion
+				string to int 
+				assign to ingred
+				push_back(ingred)
+			
+			close file()
+
+	Menu()
+		print options
+		-> [C] start calculation calc()
+		-> [A] Add/Remove reagent to list()
+		-> [O] display options()
+		-> [S] See Reagents()
+		-> [E] Edit reagent()
+		-> [Q] exit program()
+		
+		return
+	
+		check input(std::string s)
+			std::cin >> cmd
+			while( s.size() > 1 or < 1 or not A O S E Q)) 
+				print wrong entry
+				ask for input
+			switch(cmd) {
+				case: A
+					addReagent()
+				case: O
+					displayOptions()
+				case: S
+					showReagents()
+				case: E
+					editReagents()
+				case: Q
+					exit()
+				
+		calc()
+			cout << Enter number of reagents
+				
+			
+			std::getline(cin, num_reag); 
+			while(num_reg--) 
+				cout << Enter ingredient name
+				cin << ingred_name
+				if ingred_name not on list
+					cout << ingred not found, enter [S] to show available ingredients
+						to add a new ingredient, enter [Q] to exit and add ingredient. 
+				else 
+					cout << enter desired concentration of ingredient millimolar 
+					std::getline(cin, temp_conc, endl); 
+					try catch string to double 
+					convert string to double(temp_conc)
+					
+	
+	
+		
