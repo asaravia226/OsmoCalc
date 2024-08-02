@@ -12,7 +12,7 @@ How to use:
  2. The program will allocate this much space for these
 		b. editing capacity will be an option, e.g. "you are missing a chemical, go back to adjust ingredient count." 
 	
- 3. The user will be asked to enter the name of the  (1) ingredient name, (2) its molar mass, and (3) ion dissociation count
+ 3. The user will be asked to enter the name of the (1) ingredient (compund) and (2) its ion dissociation count. If you do not now ion dissociation count, you will have to research it on your own. 
 		a. ingredient must be a common compound found in a typical buffer solution (e.g. HEPES, MgCl, etc.). 
 			-if ingredient isn't found, the prompt will re-appear
 		b. User can see current list of ingredients --> e.g. "To see current list of ingredients, type and enter i" 
