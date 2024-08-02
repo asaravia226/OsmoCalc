@@ -2,7 +2,7 @@
 ##a calculator to sum the total osmolarity of buffer solutions##
 
 Goal: 
-	-The goal of this program is to calculate the total osmolarity of a buffer solution (not including titrant volumes added). 
+	 The goal of this program is to calculate the total osmolarity of a buffer solution (not including titrant volumes added). 
 
 How to use: 
 
