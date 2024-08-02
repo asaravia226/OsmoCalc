@@ -3,8 +3,8 @@ Functions:
 	
 	struct ingredient
 		std::string name
-		double MW
 		int dissoc_ion
+		double concentration // for display purposes
 	std::vector<ingredient> list; 
 	
 	File Management: 
@@ -32,8 +32,6 @@ Psuedocode:
 				stringstream ss(line)
 				getlin(ss,line,',')
 				list[ingredient].name = line; 
-				getline -> get MolWeight
-				string to double molWeigh
 				assign to ingredient
 				getline-> get dissoc_ion
 				string to int 
@@ -71,9 +69,9 @@ Psuedocode:
 					exit()
 				
 		calc()
-			cout << Enter number of reagents
-				
-			
+			cout << Enter number of reagents	
+			unsigned int num_reag
+			std::vector<ingredients>recipe{num_reag} ;  
 			std::getline(cin, num_reag); 
 			while(num_reg--) 
 				cout << Enter ingredient name
@@ -82,10 +80,23 @@ Psuedocode:
 					cout << ingred not found, enter [S] to show available ingredients
 						to add a new ingredient, enter [Q] to exit and add ingredient. 
 				else 
-					cout << enter desired concentration of ingredient millimolar 
-					std::getline(cin, temp_conc, endl); 
-					try catch string to double 
-					convert string to double(temp_conc)
+
+					bool error = false
+					while(false)
+						cout << enter desired concentration of ingredient (millimolar)
+						std::getline(cin, temp_conc, endl); 
+						try string to double 
+						catch error
+							cout << wrong format, Re-enter concentration
+							break
+						error = true; 
+						
+					conc convert string to double(temp_conc)
+					
+					recipe.concentration = get list.ingredient[]-> dissoc_ion * conc
+					
+					recipe.push_back() -> matching ingredient in list 
+					display ingredient
 					
 	
 	
