@@ -1,8 +1,8 @@
 # OsmoCalc
-##a calculator to sum the total osmolarity of buffer solutions##
+## A  calculator to sum the total osmolarity of buffer solutions ##
 
 Goal: 
-	 The goal of this program is to calculate the total osmolarity of a buffer solution (not including titrant volumes added). 
+	 The goal of this program is to calculate the total osmolarity of a buffer solution (not including titrant volumes added). Most online Osmolarity tools focus on blood/serum osmolarity calculations. I saw a need to make a tool to calculate total solution osmolarities for my 	buffer/reagent solutions in the lab, often consisting of basic chemical compounds. 
 
 How to use: 
 
