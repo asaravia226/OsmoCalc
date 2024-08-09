@@ -18,8 +18,6 @@ if(!(std::fstream file("ingredients.txt"))) {
 		std::vector<ingredient> list; 
 		pushFile(list); 
 	}
-
-
 std::vector<ingredient> pushIngred(std::string name, unsigned int ions, std::vector<ingredient> ingreds){
 	ingredient my_ingred; 
 	my_ingred.name = name; 
@@ -29,14 +27,15 @@ std::vector<ingredient> pushIngred(std::string name, unsigned int ions, std::vec
 }	
 pushFile(std::vector<ingredient> list){
 	std::string line; 
-	std::string name;                                                                                                                                                       std::temp_ions;                                                                                                                                                         std::ifstream fileStream;
+	std::string name;                                                                                                                                                           std::temp_ions;                                                                                                                                                             std::ifstream fileStream;
         
 	while (std::getline(fileStream, line)) {
 		std::stringstream ss(line);
 		std::getline(ss, name, ',');
 		std::getline(ss,temp_ions, '\n'); 		
 		try {std::stoi(temp_ions);}
-		catch(std::exception& e){std::cout << "No Ion Dissociation given to ingredient. Update 'ingredients.txt' file for ingredient:" << name << "\n";}			list = pushIngred(name,ions,list); 
+		catch(std::exception& e){std::cout << "No Ion Dissociation given to ingredient. Update 'ingredients.txt' file for ingredient:" << name << "\n";}
+		list = pushIngred(name,ions,list); 
 	}
 }
 #endif
